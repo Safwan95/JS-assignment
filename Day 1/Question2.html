@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+          Difference
+        </title>
+    </head>
+    <body>
+    <h3>Var</h3>
+    <p>
+    It is used to create or declare a variable. The syntax is <mark> var "variable name"</mark>.It can be redeclared and updated. It is funtion scoped , that is they are available only in the function they are created in or else they are called global scoped.If we declare a var inside a function and try to call outside that fucntion, it wont work.
+    <br><br>
+    Eg: var a = 5; <br>
+         var b; <br>
+         
+         console.log(a);  //output 5 <br>
+         console.log(b);  //output will be null  <br>
+    </p>
+    <h3>Let</h3>
+    <p>
+    It declares a variable in a block scope, that in is a set of opening and closing curly brackets. If we declare a let variable at the global scope, then redeclare it within a block, then the variable declared at the global scope will only be declared and not the one in the block scope or curly brackets.
+    <br><br>
+    Eg: let num=78; <br>
+        console.log(num);  //output 78 <br>
+
+        Let in a block scope: <br>
+        { <br>
+            let num=67; <br>
+            console.log(num);  //output 67 <br>
+        } <br>
+    </p>
+    <h3>Const</h3>
+    <p>
+    Its value can only be assigned once and cannot be reassigned. It stays the same throught the program. Like the name suggests it is 'const(ant)'. If we try to reassign a const value it returns error message. It is also block scoped.
+    <br><br>
+    Eg: const this_one =10; <br>
+        console.log(this_one);  //output 10
+    </p>
+    </body>
+</html>
