@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks And Grade</title>
+</head>
+<body>
+    <script>
+        /*If the mark is between 100 and 75, the person get an A , if its btw 75 and 50 its a B, if its btw 50 and 25 its a C, if its btw 0 and 25 its a D , and if its greater than or less than 100 and 0 respectvly its an invalid output
+        */
+        let mark = prompt("Enter your marks out of 100");
+        if(mark <=100 && mark >=75 ){
+            console.log("Marks are "+mark+" grade is A");
+        }
+        else if(mark <75 && mark >=50 ){
+            console.log("Marks are "+mark+" grade is B");
+        }
+        else if(mark <50 && mark >=25 ){
+            console.log("Marks are "+mark+" grade is C");
+        }
+        else if(mark <25 && mark >=0 ){
+            console.log("Marks are "+mark+" grade is D");
+        }
+        else{
+            console.log("Invalid marks");
+        }
+
+        //Using ternary operator
+
+        /*
+        let mark = prompt("Enter your marks out of 100");
+    
+        console.log(mark_final = (mark <=100 && mark >=75 )? ("Marks are "+mark+" grade is A"):
+                                 (mark <75 && mark >=50 )? ("Marks are "+mark+" grade is B"):
+                                 (mark <50 && mark >=25 )? ("Marks are "+mark+" grade is C"):
+                                 (mark <25 && mark >=0 )? ("Marks are "+mark+" grade is D"):
+                                  "Invalid marks");        
+        */
+        
+    </script>
+</body>
+</html>
