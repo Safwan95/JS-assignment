@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        let num1 = prompt("Enter the first number");
+        let oper = prompt("Enter the operator");
+        let num2 = prompt("Enter the second number");
+        if (oper == '+'){
+            console.log(+num1 + +num2);
+        }    
+        else if (oper == '-'){
+            console.log(+num1 - +num2);
+        }
+        else if (oper == '*'){
+            console.log(+num1 * +num2);
+        }
+        else if (oper == '/'){
+            console.log(+num1 / +num2);
+        }
+        else if (oper == '%'){
+            console.log((+num1 / +num2)*100);
+        }
+        
+         </script>    
+</body>
+</html>
