@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        class User {
+            constructor(name, age,gmail) {
+              this.name = name;
+              this.age = age;
+              this.gmail = gmail;
+            }
+            login(){
+                console.log(`${this.name} has logged in`);
+                return this;
+            }
+            logout(){
+                console.log(`${this.name} has logged out`);
+                return this;
+            }
+            }
+            class Moderator extends User{
+                constructor(name,age,gmail){
+                    super(name,age,gmail);
+                    
+                }
+           
+            } 
+    
+        
+        class Admin extends Moderator{
+            constructor(name,age,gmail)
+            {
+              super(name,age,gmail)
+            }
+            addCourse(user,course){
+            user.courses.push(course);
+            console.log(user);
+            }
+            deleteCourse(user,course){
+
+            }   
+        
+        }    
+        
+        let user1 = new User('Max',21,'Max@gmail.com')
+        let user2 = new User('Kenzie',19,'k@gmai.com')
+        let modrtr = new Moderator('Amy',23,'Ams@gmail.com',);
+        let admin = new Admin('Jacksom',26,'jack@gmail.com');   
+       
+
+    </script>
+</body>
+</html>
