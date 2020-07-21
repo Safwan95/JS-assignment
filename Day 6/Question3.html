@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          background-color: white;
+          color: black;
+          font-size: 25px;
+        }
+        
+        .darkmode {
+          background-color: black;
+          color: white;
+        }
+        </style>
+</head>
+<body>
+   <h3 id="nme"></h3>
+   <h4 id="tmeclk"></h4>
+   <button onclick="darky()">Dark mode</button>
+
+    <script>
+        let usr=prompt("Enter your name",'Anonymous');
+        let getNme=document.getElementById('nme');
+        getNme.innerHTML += `Welcome to this website ${usr}`;
+        
+        let tmcl = document.getElementById('tmeclk');
+
+        function clock(){
+            let date= new Date();
+            let time= date.toLocaleTimeString();
+            tmcl.innerHTML=time;
+        }
+        setInterval(clock,100);
+
+        function darky() {
+            let boda = document.body;
+            boda.classList.toggle("darkmode");
+         }
+    </script>
+</body>
+</html>

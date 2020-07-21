@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="multi"></p>
+    <script>
+        function printTable(){
+            let num=Number(prompt("Enter a number"));
+            //Upto which number we want the table.
+            let lim=Number(prompt("Enter upto which multiplication"));
+            for(var i=1; i<=lim; i++){
+                let tabM= document.getElementById('multi');
+                tabM.innerHTML += (num*i) + "<br/>" 
+            }
+        }
+        printTable();
+    </script>
+</body>
+</html>
